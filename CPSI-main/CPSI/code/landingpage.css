@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FCF8F5;
+}
+
+/*INICIO*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em;
+    margin-top: 1em;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+article{
+    background-image: url(hidroginastica.png);
+    padding: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0.2em solid #6AA13B ;
+    border-bottom: 0.2em solid #6AA13B ;
+    margin-top: 1em;
+}
+.button{ 
+    background-color:#6AA13B;
+    border: 0;
+    color: #eeebeb;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-family: 'Poppins', serif;
+    
+    text-align: center;
+    width: 8em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3em;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 5em;
+    text-decoration: none; 
+}
+li ul nav{
+    color: #11110A;
+    font-weight: bold;
+}
+a:hover{
+    color: #294B08;
+}
+h1{
+    text-align: center;
+    color: #294B08;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 101px;
+    letter-spacing: -0.18px;
+    }
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #163713;
+    margin-top: 1em;
+    font-size: 1.1em;
+    text-align: center;
+}
+    
+
+/*MODALIDADE*/
+h3{
+    text-align: left;
+    margin-top: 4em;
+    margin-left: 3.5em;
+    font-family: 'Poppins';
+    font-size: 2em;
+} 
+h2{
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 3em;
+    font-size: 3em;
+    line-height: 71px;
+    /* identical to box height
+    letter-spacing: -0.18px; */   
+
+    color: #011811;
+}
+
+section p{
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 6.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #011811;
+}
+div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 10em;
+    margin-left: -3em;
+
+    align-items: center;
+    text-decoration: none;
+    color: #11110A;
+
+    padding: 2em 7em;
+    min-width: 6em;
+    min-height: 6em;
+    
+}
+div a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3em;
+    color: #11110A;
+}
+.modalidade a:hover{
+    color: #294B08;
+    
+}
+.setalado{
+    margin-left: -3em;
+}
+
+
+/*OONTATO*/
+.contato{
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr 8fr 8fr;
+    grid-template-rows: 20vh 20vh ;
+    margin-top: 3em;
+
+    grid-area: "instagram" "whats" "yt"
+                    "face"      "email";
+}
+.mapa{
+    text-align: center;
+    margin: 2em;
+}
+.mapa img{
+    margin: 3em;
+}
+.mapa p{
+    text-align: center;
+    font-family: 'Poppins', serif;
+    margin-right: 8em;
+}
+.mapa p:nth-child(4){
+    font-weight: bold;
+}
+
+
+/*EQUIPE*/
+.equipe{
+    margin-bottom: 15em;
+}
+.equipe ul li:nth-child(1){
+    position: absolute;
+    left: 38em;
+    top: 340em;
+}
+.equipe ul li:nth-child(1) h4{
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 1.6em;
+    width: 12em;
+    left: 5em;
+    top: 1em;
+}
+.equipe ul li:nth-child(1) p{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    width: 12em;
+    left: 1.7em;
+    top: 2em;
+}
+.equipe ul li:nth-child(2){
+    position: absolute;
+    left: 70em;
+    top: 345em;
+}
+.equipe ul li:nth-child(2) h4{
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 1.6em;
+    width: 12em;
+    right: 1em;
+    top: 0.8em;
+}
+.equipe ul li:nth-child(2) p{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    width: 12em;
+    right: 6.3em;
+    top: 1.8em;
+}
+
+.equipe h3{
+    text-align: center;
+    margin-right: 3em;
+    font-size: 2em;
+    font-family: 'Michroma', sans-serif;
+    color: #163713;
+}
+.linha {
+    text-align: center;
+    margin-left: 13em;
+}
+.seta{
+    margin-left: 95em;
+    margin-top: 10em;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #294B08;
+    font-family: 'Poppins';
+    width: 100%;
+}
+footer img{
+    margin: auto;
+}

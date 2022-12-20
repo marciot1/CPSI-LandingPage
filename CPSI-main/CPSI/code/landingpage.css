@@ -20,8 +20,12 @@ header {
     font-size: 20px;
     line-height: 30px;
 }
+header a {
+    text-decoration: none;
+    color:#087A34;
+}
 article{
-    background-image: url(hidroginastica.png);
+    background-image: url(../Imagens/hidroginastica.png);
     padding: 10em;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +44,6 @@ article{
     
     text-align: center;
     width: 8em;
-    display: block;
     margin: 0 auto;
     margin-top: 3em;
     text-decoration: none;
@@ -72,7 +75,7 @@ p{
     font-family: 'Poppins', sans-serif;
     color: #163713;
     margin-top: 1em;
-    font-size: 1.1em;
+    font-size: 1.4em;
     text-align: center;
 }
     
@@ -91,42 +94,32 @@ h2{
     font-style: normal;
     font-weight: 400;
     margin-top: 3em;
-    font-size: 3em;
-    line-height: 71px;
-    /* identical to box height
-    letter-spacing: -0.18px; */   
-
+    font-size: 3em;   
     color: #011811;
 }
 
 section p{
     text-align: left;
-    margin-top: 1em;
-    margin-left: 6.4em;
+    margin-left: 5em;
     font-family: 'Poppins', sans-serif;
     color: #011811;
 }
-div{
+div.modal{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    gap: 10em;
-    margin-left: -3em;
-
+    gap: 12em;
     align-items: center;
     text-decoration: none;
     color: #11110A;
-
     padding: 2em 7em;
-    min-width: 6em;
-    min-height: 6em;
-    
+    min-width: 4em;
+    min-height: 5em;
 }
 div a{
     text-decoration: none;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin-left: 3em;
     color: #11110A;
 }
 .modalidade a:hover{
@@ -134,16 +127,22 @@ div a{
     
 }
 .setalado{
-    margin-left: -3em;
+    font-size: 2em;
+    margin-left: -3.5em;
+}
+.setalado img{
+    height: 2em;
 }
 /* INSCRICAO */
 
-   .ics{
-     text-align: center;
-     margin-left: 100px;
-   }
-   .container2 { 
-     display: grid;
+.ics{
+    width: 1em;
+    height: 2em;
+    text-align: center;
+    margin-left: -10px;
+}
+.container2 { 
+    display: grid;
     grid-template-columns: 1.5fr 0.2fr 1.4fr;
     grid-template-rows: 1fr 0.9fr 1.1fr;
     grid-auto-rows: 2fr;
@@ -157,9 +156,8 @@ div a{
   }
 .a{
     grid-area: a;
-    /* background-color: blueviolet; */
     background-image: url(linha.png); background-repeat: no-repeat;
-  width: 20px;
+    width: 20px;
 }
 .b{
     grid-area: b;
@@ -185,98 +183,46 @@ div a{
     grid-area: g;
     background-color: rgb(226, 43, 43);
 }
-
 h3 p .inscricao{
     font-size: 7px;
 }
-/*OONTATO*/
-.contato{
-    display: grid;
-    grid-template-columns: 8fr 8fr 8fr 8fr 8fr;
-    grid-template-rows: 20vh 20vh ;
-    margin-top: 3em;
 
-    grid-area: "instagram" "whats" "yt"
-                    "face"    "email";
+/*CONTATO*/
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
 }
+.contato div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5em;
+}
+.contato div .paragrafo{
+    font-family: 'Michroma';
+    font-size: 1.2em;
+}
+.contato img{
+    height: 5.5em;
+    margin-bottom: 0.7em;
+}
+
+
 .mapa{
     text-align: center;
-    margin: 2em;
 }
-.mapa img{
-    margin: 3em;
-}
-.mapa p{
-    text-align: center;
-    font-family: 'Poppins', serif;
-    margin-right: 8em;
-}
-.mapa p:nth-child(4){
-    font-weight: bold;
-}
-
-
 /*EQUIPE*/
 .equipe{
     margin-bottom: 15em;
 }
-.equipe ul li:nth-child(1){
-    position: absolute;
-    left: 38em;
-    top: 340em;
-}
-.equipe ul li:nth-child(1) h4{
-    position: absolute;
-    font-family: 'Poppins';
-    font-size: 1.6em;
-    width: 12em;
-    left: 5em;
-    top: 1em;
-}
-.equipe ul li:nth-child(1) p{
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    width: 12em;
-    left: 1.7em;
-    top: 2em;
-}
-.equipe ul li:nth-child(2){
-    position: absolute;
-    left: 70em;
-    top: 345em;
-}
-.equipe ul li:nth-child(2) h4{
-    position: absolute;
-    font-family: 'Poppins';
-    font-size: 1.6em;
-    width: 12em;
-    right: 1em;
-    top: 0.8em;
-}
-.equipe ul li:nth-child(2) p{
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    width: 12em;
-    right: 6.3em;
-    top: 1.8em;
-}
-
 .equipe h3{
     text-align: center;
-    margin-right: 3em;
-    font-size: 2em;
-    font-family: 'Michroma', sans-serif;
-    color: #163713;
 }
 .linha {
     text-align: center;
-    margin-left: 13em;
-}
-.seta{
-    margin-left: 95em;
-    margin-top: 10em;
 }
 
 
@@ -284,7 +230,6 @@ h3 p .inscricao{
 footer{
     background-color: #294B08;
     font-family: 'Poppins';
-    width: 100%;
 }
 footer img{
     margin: auto;

@@ -136,8 +136,59 @@ div a{
 .setalado{
     margin-left: -3em;
 }
+/* INSCRICAO */
 
+   .ics{
+     text-align: center;
+     margin-left: 100px;
+   }
+   .container2 { 
+     display: grid;
+    grid-template-columns: 1.5fr 0.2fr 1.4fr;
+    grid-template-rows: 1fr 0.9fr 1.1fr;
+    grid-auto-rows: 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    align-items: stretch;
+    grid-template-areas:
+      "a d e"
+      "b d f"
+      "c d g";
+  }
+.a{
+    grid-area: a;
+    /* background-color: blueviolet; */
+    background-image: url(linha.png); background-repeat: no-repeat;
+  width: 20px;
+}
+.b{
+    grid-area: b;
+    background-color: rgb(31, 113, 128);
+}
+.c{
+    grid-area: c;
+    background-color: rgb(226, 183, 43);
+}
+.d{
+    grid-area: d;
+    background-color: rgb(43, 46, 226);
+}
+.e{
+    grid-area: e;
+    background-color: rgb(177, 226, 43);
+}
+.f{
+    grid-area: f;
+    background-color: rgb(48, 139, 94);
+}
+.g{
+    grid-area: g;
+    background-color: rgb(226, 43, 43);
+}
 
+h3 p .inscricao{
+    font-size: 7px;
+}
 /*OONTATO*/
 .contato{
     display: grid;
@@ -146,7 +197,7 @@ div a{
     margin-top: 3em;
 
     grid-area: "instagram" "whats" "yt"
-                    "face"      "email";
+                    "face"    "email";
 }
 .mapa{
     text-align: center;
@@ -237,3 +288,4 @@ footer{
 }
 footer img{
     margin: auto;
+}

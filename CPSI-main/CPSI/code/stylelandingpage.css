@@ -194,23 +194,35 @@ h3 p .inscricao{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8em;
+    /*gap: 8em; */
     margin: 0 auto;
+
+    /*acrescentei as duas linhas a seguir*/
+    flex-flow: row wrap;
+    width: 70%;
 }
 .contato div{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3em;
-    
+    margin-top: 3em;    
 }
 .contato div:nth-of-type(1){
-    flex-grow: 4;
-    flex-shrink: 1;
-    flex-basis: 100%;
-    flex: 0 1 auto;
-    order: 3;
+    flex: 1 1 40%; 
+}
+.contato div:nth-of-type(2){
+    flex: 1 1 20%;
+}
+.contato div:nth-of-type(3){
+    flex: 1 1 40%;
+}
+.contato div:nth-of-type(4){
+    flex: 1 1 55%;
+}
+.contato div:nth-of-type(5){
+    flex: 1 1 45%;
+    padding-right: 10%;
 }
 .contato div .paragrafo{
     font-family: 'Michroma';

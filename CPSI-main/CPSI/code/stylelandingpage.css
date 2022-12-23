@@ -140,9 +140,10 @@ div a{
 .ics{
     width: 1em;
     height: 2em;
-    text-align: center;
-    margin-left: -10px;
+    margin-left: 47em;
+    margin-bottom: 5em;
 }
+
 .container2 { 
     display: grid;
     grid-template-columns: 1.5fr 0.2fr 1.4fr;
@@ -158,8 +159,10 @@ div a{
   }
 .a{
     grid-area: a;
-    background-image: url(linha.png); background-repeat: no-repeat;
-    width: 20px;
+   
+    width: 80px;
+    height: 10px;
+    justify-content: left;
 }
 .b{
     grid-area: b;

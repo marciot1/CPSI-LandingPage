@@ -135,8 +135,73 @@ div a{
 .setalado img{
     height: 2em;
 }
-/* INSCRICAO */
+/*TABELA*/
+.musculacao caption{
+    color: #FFFFFF;
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 2em;
+}
+.musculacao table{
+    background-color: #175832;
+    width: 70em;
+    height: 40em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5em;
+    padding: 3em;
+    border-collapse: separate; 
+    border-spacing: 15px;
+}
+.musculacao th:nth-child(1){
+    background-color: #087A34;
+    color: #E9E4CF;
+}
+.musculacao th{
+    background-color: #1F462E;
+    width: 2em;
+    height: 1em;
+    font-size: 1em;
+    color:#FFFFFF ;
+    font-family: 'Martel Sans', sans-serif;
+}
+.musculacao td{
+    background-color: #E9E4CF;
+    font-family: 'Martel Sans';
+    font-weight: bolder;
+    color: #1F462E;
 
+}
+.musculacao td:nth-child(1){
+    background-color:#087A34 ;
+    font-family: 'Poppins';
+    color: #E9E4CF;
+}
+ /*BOTAO*/
+.container {
+    background-color: #444444;
+    margin: auto;
+    padding: 20px;
+    width: 150%;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 2EM;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* INSCRICAO */
 .ics{
     width: 1em;
     height: 2em;
@@ -305,7 +370,7 @@ h3 p .inscricao{
 footer{
     background-color: #294B08;
 }
-footer .container{
+footer .container3{
     text-align: center;
 }
 footer img{

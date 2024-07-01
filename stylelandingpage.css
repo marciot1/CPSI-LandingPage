@@ -1,378 +1,99 @@
-* {
-    padding: 0;
+:root{
+    --color-white: #000000;
+    --color-dark1: rgb(255, 255, 255);
+    --color-dark2: #ffffff;
+    --color-dark3: #ffffff;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #ffffff;
+    --color-kil: #0066ff;
+    --color-purple: #000000;
+    --color-h1: #1c1c1c;
+
+}
+*{
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
 body{
-    background-color: #FCF8F5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark1);
+    color: var(--color-white);
 }
 
-/*INICIO*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7em;
-    margin-top: 1em;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-}
-header a {
-    text-decoration: none;
-    color:#087A34;
-}
-article{
-    background-image: url(../Imagens/hidroginastica.png);
-    padding: 10em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 0.2em solid #6AA13B ;
-    border-bottom: 0.2em solid #6AA13B ;
-    margin-top: 1em;
-}
-.button{ 
-    background-color:#6AA13B;
-    border: 0;
-    color: #eeebeb;
-    padding: 1em;
-    border-radius: 0.5em;
-    font-size: 1.5em;
-    font-family: 'Poppins', serif;
+.img_logo_header{
+    width: 100px;
     
-    text-align: center;
-    width: 8em;
-    display: block;
-    margin: 0 auto;
-    margin-top: 3em;
-    text-decoration: none;
 }
-ul{
+.header,
+.navigation_header{
     display: flex;
-    list-style-type: none;
-    gap: 5em;
-    text-decoration: none; 
+    flex-direction: row;
+    align-items: center;
 }
-li ul nav{
-    color: #11110A;
-    font-weight: bold;
-}
-a:hover{
-    color: #294B08;
+.header{
+    background-color: var(--color-dark2);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 5.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
 }
 h1{
-    text-align: center;
-    color: #294B08;
-    font-family: 'Exo 2', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 101px;
-    letter-spacing: -0.18px;
-    }
-.inicio{
-    font-family: 'Poppins', sans-serif;
-    color: #163713;
-    margin-top: 1em;
-    font-size: 1.4em;
-    text-align: center;
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    height: 60%;
+    background-attachment: fixed; 
+    background-size: 20% 60%;
+    color: var(--color-h1);
 }
-    
-
-/*MODALIDADE*/
-.modalidade h3{
-    text-align: left;
-    margin-top: 4em;
-    margin-left: 3.8em;
-    font-family: 'Poppins';
-    font-size: 2em;
-} 
-h2{
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.content{
+    padding-top: 5em;
     text-align: center;
-    font-family: 'Michroma', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 3em;
-    font-size: 3em;   
-    color: #011811;
+    height: 100vh;
+    transition: 1s;
 }
-
-section .pmodalidade{
-    text-align: left;
-    margin-top: 1em;
-    margin-left: 7.5em;
-    font-family: 'Poppins', sans-serif;
-    color: #011811;
-}
-.modal{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 12em;
-    align-items: center;
+.navigation_header a{
     text-decoration: none;
-    color: #11110A;
-    padding: 2em 7em;
-    min-width: 4em;
-    min-height: 5em;
-}
-div a{
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: #11110A;
-}
-.modalidade a:hover{
-    color: #294B08;
-    
-}
-.setalado{
-    font-size: 2em;
-    margin-left: -3.5em;
-}
-.setalado img{
-    height: 2em;
-}
-/*TABELA*/
-.musculacao caption{
-    color: #FFFFFF;
-    font-family: 'Michroma', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 2em;
-}
-.musculacao table{
-    background-color: #175832;
-    width: 70em;
-    height: 40em;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 5em;
-    padding: 3em;
-    border-collapse: separate; 
-    border-spacing: 15px;
-}
-.musculacao th:nth-child(1){
-    background-color: #087A34;
-    color: #E9E4CF;
-}
-.musculacao th{
-    background-color: #1F462E;
-    width: 2em;
-    height: 1em;
-    font-size: 1em;
-    color:#FFFFFF ;
-    font-family: 'Martel Sans', sans-serif;
-}
-.musculacao td{
-    background-color: #E9E4CF;
-    font-family: 'Martel Sans';
-    font-weight: bolder;
-    color: #1F462E;
-
-}
-.musculacao td:nth-child(1){
-    background-color:#087A34 ;
-    font-family: 'Poppins';
-    color: #E9E4CF;
-}
- /*BOTAO*/
-.container {
-    background-color: #444444;
-    margin: auto;
-    padding: 20px;
-    width: 150%;
-}
-
-.close {
-    color: #ffffff;
-    float: right;
-    font-size: 2EM;
+    color: var(--color-purple);
+    transition: 1s;
     font-weight: bold;
 }
+.navigation_header a:hover{
+    color: var(--color-kil);
+}
+.active{
+    color: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
     cursor: pointer;
+    display: none;
 }
-
-
-/* INSCRICAO */
-.ics{
-    width: 1em;
-    height: 2em;
-    margin-left: 47em;
-    margin-bottom: 5em;
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
 }
-
-.container2 { 
-    display: grid;
-    grid-template-columns: 1.5fr 0.2fr 1.4fr;
-    grid-template-rows: 1fr 0.9fr 1.1fr;
-    grid-auto-rows: 2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row dense;
-    align-items: stretch;
-    grid-template-areas:
-      "a d e"
-      "b d f"
-      "c d g";
-  }
-.a{
-    grid-area: a;
-}
-.a img {
-    width: 50em;
-    height: 2px;
-}
-.b{
-    grid-area: b;
-    background-color: rgb(31, 113, 128);
-}
-.c{
-    grid-area: c;
-    background-color: rgb(226, 183, 43);
-}
-.d{
-    grid-area: d;
-    background-color: rgb(43, 46, 226);
-}
-.e{
-    grid-area: e;
-    background-color: rgb(177, 226, 43);
-}
-.f{
-    grid-area: f;
-    background-color: rgb(48, 139, 94);
-}
-.g{
-    grid-area: g;
-    background-color: rgb(226, 43, 43);
-}
-h3 p .inscricao{
-    font-size: 7px;
-}
-
-/*CONTATO*/
-.contato{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*gap: 8em; */
-    margin: 0 auto;
-
-    /*acrescentei as duas linhas a seguir*/
-    flex-flow: row wrap;
-    width: 70%;
-}
-.contato div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 3em;    
-}
-.contato div:nth-of-type(1){
-    flex: 1 1 40%; 
-}
-.contato div:nth-of-type(2){
-    flex: 1 1 20%;
-}
-.contato div:nth-of-type(3){
-    flex: 1 1 40%;
-}
-.contato div:nth-of-type(4){
-    flex: 1 1 55%;
-}
-.contato div:nth-of-type(5){
-    flex: 1 1 45%;
-    padding-right: 10%;
-}
-.contato div .paragrafo{
-    font-family: 'Michroma';
-    font-size: 1.2em;
-    margin-top: 1em;
-}
-.contato img{
-    height: 5.5em;
-}
-
-.mapa{
-    text-align: center;
-}
-.mapa p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
-}
-.endereco{
-    font-family: 'Poppins';
-    font-weight: bold;
-    margin-top: 2em;
-    margin-bottom: 1.3em;
-}
-
-/*EQUIPE*/
-.equipe{
-    margin-bottom: 15em;
-}
-.equipe ul{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-}
-.equipe li:nth-child(1){
-    background-color: #087A34;
-    position: absolute;
-    width: 606.58px;
-    height: 128.79px;
-    left: 537px;
-    top: 325em;
-}
-.equipe li:nth-child(2){
-    background-color: #163713;
-    position: absolute;
-    width: 367.83px;
-    height: 130.35px;
-    left: 808px;
-    top: 330em;
-}
-.equipe h3{
-    display:block;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-family: 'Michroma', sans-serif;
-    font-size: 1.5em;
-}
-.equipe h4{
-    font-family: 'Poppins';
-}
-.equipe p{
-    font-family: 'Poppins', sans-serif;
-}
-.linha {
-    text-align: center;
-    margin-bottom: 5em;
-}
-.seta{
-    text-align: right;
-    margin-top: 5em;
-    margin-right: 3em;
-}
-
-
-/*FOOTER*/
-footer{
-    background-color: #294B08;
-}
-footer .container3{
-    text-align: center;
-}
-footer img{
-    margin-top: 2em;
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
 }

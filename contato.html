@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantato</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+         body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 4%;
+    }
+
+    .section-title {
+      font-weight: bold;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .address {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .address-icon {
+      width: 24px;
+      height: 24px;
+    }
+    </style>
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="20" height="20"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="logo.png" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/index.html"class="active">CPSI</a>  
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/modalidade.html">Modalidades</a>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/foto.html">Fotos</a>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/inscricao.html">Inscrição</a>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/equipe.html">Equipes</a>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/contato.html">Contato</a>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI/index/projeto.html">Projeto</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-info">
+          <img class="contact-icon" src="imag/mensagem 1.png" alt="Email">
+          <span><a href="">cpsi@gmail.com</a></span>
+        </div>
+        <div class="contact-info">
+          <img class="contact-icon" src="imag/whatsapp 1.png" alt="Whatsapp">
+          <span><a href="">+55 84 98821-6003</a></span>
+        </div>
+    
+        <h2 class="section-title">Rede</h2>
+        <div class="contact-info">
+          <img class="contact-icon" src="imag/youtube 1.png" alt="Youtube">
+          <span><a href="">CPSI</a></span>
+        </div>
+        <div class="contact-info">
+          <img class="contact-icon" src="imag/instagram 1.png" alt="Instagram">
+          <span><a href="">@cpsi.ifrn</a></span>
+        </div>
+        <div class="contact-info">
+          <img class="contact-icon" src="imag/facebook 1.png" alt="Facebook">
+          <span><a href="">Centrodepromocaoasaudedoidoso</a></span>
+        </div>
+    
+        <h2 class="section-title">Endereço</h2>
+        <div class="address">
+          <img class="address-icon" src="imag/location 1.png" alt="Location">
+          <span><a href="">Av. Senador Salgado Filho, em frente ao Shopping Midway - Prédio da Terceira Idade - NUARTE
+            Avenida Senador Salgado Filho, 1559, Tirol, Natal-RN | CEP: 59015-000</a></span>
+        </div>
+      </div>
+   
+</body>
+</html>

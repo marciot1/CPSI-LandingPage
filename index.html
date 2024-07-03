@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body id="body">
+<body id="boy">
     <div class="header" id="header">
         <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="20" height="20"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -35,9 +35,49 @@
             <a href="file:///c%3A/Users/20181011110006/Documents/GitHub/CPSI-LandingPage/projeto.html">Projeto</a>
         </div>
     </div>
-    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
-        <h1>BEM VINDOS AO PROJETO CPSI</h1>
+    <div class="content">
+
+        <div class="slides">
+
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+            <input class="input" type="radio" name="slide" id="slide4">
+            <input class="input" type="radio" name="slide" id="slide5">
+
+
+            <div class="slide s1">
+                <img src="imagens/idosoexercises.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="./img/2.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="./img/3.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="./img/4.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="./img/5.jpg" alt="">
+            </div>
+        </div>
     </div>
+
+    <div class="navigation">
+
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+        <label class="bar" for="slide5"></label>
+
+    </div>
+    <script src="./stylejavascript.js"></script>
 </body>
 <script>
     var header           = document.getElementById('header');

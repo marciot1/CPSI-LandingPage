@@ -9,6 +9,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #fdfdfd 35%, #ffffff, #ffffff 99%); ;
+    }
+
+    .conten {
+        height: 520px;
+        width: 84%;
+        margin: 8px auto;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    .conten .slide img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .navigation {
+        position: absolute;
+        bottom: 164px;
+        left: 700px;
+        display: flex;
+    }
+
+    .bar {
+
+        width: 15px;
+        height: 15px;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 6px;
+        border-radius: 15px;
+        cursor: pointer;
+        transform: .5s ease;
+
+    }
+
+    .bar:hover {
+        background-color: white;
+    }
+
+    input {
+    display: none;
+    }
+
+    .slides {
+        display: flex;
+        width: 500%;
+        height: 100%;
+    }
+
+    .slide {
+        width: 20%;
+        transition: .6s;
+    }
+
+    #slide1:checked ~ .s1 {
+        margin-left: 0;
+    } 
+
+    #slide2:checked ~ .s1 {
+        margin-left: -20%;
+    } 
+
+    #slide3:checked ~ .s1 {
+        margin-left: -40%;
+    } 
+
+    #slide4:checked ~ .s1 {
+        margin-left: -60%;
+    } 
+
+    #slide5:checked ~ .s1 {
+        margin-left: -80%;
+    } 
+    </style>
 </head>
 <body id="boy">
     <div class="header" id="header">
@@ -35,49 +120,54 @@
             <a href="file:///c%3A/Users/20181011110006/Documents/GitHub/CPSI-LandingPage/projeto.html">Projeto</a>
         </div>
     </div>
-    <div class="content">
+    <div>
+        <div class="conten">
 
-        <div class="slides">
-
-            <input class="input" type="radio" name="slide" id="slide1" checked>
-            <input class="input" type="radio" name="slide" id="slide2">
-            <input class="input" type="radio" name="slide" id="slide3">
-            <input class="input" type="radio" name="slide" id="slide4">
-            <input class="input" type="radio" name="slide" id="slide5">
-
-
-            <div class="slide s1">
-                <img src="imagens/idosoexercises.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="./img/2.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="./img/3.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="./img/4.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="./img/5.jpg" alt="">
+            <div class="slides">
+    
+                <input class="input" type="radio" name="slide" id="slide1" checked>
+                <input class="input" type="radio" name="slide" id="slide2">
+                <input class="input" type="radio" name="slide" id="slide3">
+                <input class="input" type="radio" name="slide" id="slide4">
+                <input class="input" type="radio" name="slide" id="slide5">
+    
+    
+                <div class="slide s1">
+                    <img src="./img/1.jpg" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/2.jpg" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/3.jpg" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/4.jpg" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/5.jpg" alt="">
+                </div>
             </div>
         </div>
+    
+        <div class="navigation">
+    
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+            <label class="bar" for="slide5"></label>
+    
+        </div>
+    
+    
+        <script src="./script.js"></script>
     </div>
-
-    <div class="navigation">
-
-        <label class="bar" for="slide1"></label>
-        <label class="bar" for="slide2"></label>
-        <label class="bar" for="slide3"></label>
-        <label class="bar" for="slide4"></label>
-        <label class="bar" for="slide5"></label>
-
-    </div>
-    <script src="./stylejavascript.js"></script>
+    
 </body>
 <script>
     var header           = document.getElementById('header');

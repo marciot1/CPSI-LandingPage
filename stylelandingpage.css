@@ -1,6 +1,6 @@
 :root{
     --color-white: #000000;
-    --color-dark1: rgb(255, 255, 255);
+    --color-dark1: linear-gradient(72deg, #00dbff 35%, #ffffff, #ffffff 99%);
     --color-dark2: #ffffff;
     --color-dark3: #ffffff;
     --color-dark4: #1c1c1c;
@@ -15,6 +15,7 @@
     padding: 0;
 }
 body{
+    background-image: url(imagens/fundo-azul.jpg);
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-dark1);
     color: var(--color-white);
@@ -88,7 +89,7 @@ h1{
         height: 100%;
         width: 35vw;
         padding: 1em;
-        animation-duration: 1s;
+        animation-duration: 2s;
         margin-left: -100vw;
     }
     .btn_icon_header{

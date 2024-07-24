@@ -1,11 +1,11 @@
 :root{
     --color-white: #000000;
     --color-dark1: linear-gradient(72deg, #00dbff 35%, #ffffff, #ffffff 99%);
-    --color-dark2: #ffffff;
+    --color-dark2:#387564;
     --color-dark3: #ffffff;
     --color-dark4: #1c1c1c;
     --color-dark5: #ffffff;
-    --color-kil: #0066ff;
+    --color-kil: #ffffff;
     --color-purple: #000000;
     --color-h1: #1c1c1c;
 
@@ -15,7 +15,6 @@
     padding: 0;
 }
 body{
-    background-image: url(imagens/fundo-azul.jpg);
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-dark1);
     color: var(--color-white);
@@ -49,14 +48,14 @@ h1{
 }
 
 .navigation_header{
-    gap: 3em;
-    z-index: 2;
+    gap: 4em;
+    z-index: 6;
 }
 .content{
     padding-top: 5em;
     text-align: center;
     height: 100vh;
-    transition: 1s;
+    transition: 2s;
 }
 .navigation_header a{
     text-decoration: none;
@@ -85,7 +84,7 @@ h1{
         position: absolute;
         flex-direction: column !important;
         top: 0;
-        background: var(--color-dark5);
+        background: #387564;
         height: 100%;
         width: 35vw;
         padding: 1em;

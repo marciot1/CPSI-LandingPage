@@ -5,7 +5,7 @@ setInterval( function(){
     document.getElementById('slide' + contador).checked = true;
     contador++;
 
-    if(counter > 5 ) {
+    if(counter > 1 ) {
         contador = 5;
     }
 }, 3000 );

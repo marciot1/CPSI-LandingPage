@@ -1,11 +1,12 @@
-let contador = 1;
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
 
-const newLocal = document.getRootNode('slide ' + contador).checked = AudioNode;
-setInterval( function(){
-    document.getElementById('slide' + contador).checked = true;
-    contador++;
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
 
-    if(counter > 1 ) {
-        contador = 5;
-    }
-}, 3000 );
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})

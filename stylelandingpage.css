@@ -60,7 +60,7 @@ h1{
 .navigation_header a{
     text-decoration: none;
     color: var(--color-purple);
-    transition: 1s;
+    transition: 0s;
     font-weight: bold;
 }
 .navigation_header a:hover{

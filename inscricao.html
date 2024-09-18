@@ -109,12 +109,15 @@
         <label for="telefone">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" required>
 
-        <label for="saude">Como você saúde estão?</label>
+        <label for="saude">Como está sua saúde?</label>
         <textarea id="saude" name="saude" required></textarea>
 
-        <button type="submit">Salvar</button>
+        <button type="button" onclick="salvarDados()">Salvar</button>
     </div>
+    <script src="inscricao.js"></script>
 </body>
+<button style="background: #ffff; color: #000000;" type="button" onclick="exportarParaExcel()">Exportar para Excel</button>
+
 <script>
     var header           = document.getElementById('header');
     var navigationHeader = document.getElementById('navigation_header');

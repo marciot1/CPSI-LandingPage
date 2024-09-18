@@ -88,11 +88,11 @@ h1{
         height: 100%;
         width: 35vw;
         padding: 1em;
-        animation-duration: 2s;
+        animation-duration: 0s;
         margin-left: -100vw;
     }
     .btn_icon_header{
-        display: block;
+        display: contents;
     }
 }
 @keyframes showSidebar {

@@ -1,11 +1,11 @@
 :root{
     --color-white: #000000;
     --color-dark1: linear-gradient(72deg, #00dbff 35%, #ffffff, #ffffff 99%);
-    --color-dark2:#387564;
+    --color-dark2:#ffffff;
     --color-dark3: #ffffff;
     --color-dark4: #1c1c1c;
     --color-dark5: #ffffff;
-    --color-kil: #ffffff;
+    --color-kil: #1bb87b;
     --color-purple: #000000;
     --color-h1: #1c1c1c;
 
@@ -88,7 +88,7 @@ h1{
         height: 100%;
         width: 35vw;
         padding: 1em;
-        animation-duration: 0s;
+        animation-duration: 1s;
         margin-left: -100vw;
     }
     .btn_icon_header{

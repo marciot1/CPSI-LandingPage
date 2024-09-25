@@ -1,0 +1,77 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0%;
+padding: 0%;
+}
+
+h2 {
+    padding: 30px;
+    text-align: start;
+    margin-bottom: 60px;
+}
+
+.container {
+display: grid;
+grid-template-columns: repeat(6, 1fr); /* 6 columns for the table */
+gap: 10px; /* Space between buttons */
+margin: 0 auto;
+max-width: 800px; /* Limit max width for better readability */
+}
+
+.button {
+background-color: #387564; /* Primary color */
+color: white;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.button:hover {
+background-color: #45a049; /* Darker shade on hover */
+}
+
+.button-black {
+background-color: #343a40; /* Dark background for weekdays */
+color: white;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+}
+
+.button-gray {
+background-color: #fff; /* Gray background for time slots */
+color: white;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+}
+
+.input-container {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 17em;
+    flex: 309px;
+}
+
+.input-container button {
+padding: 10px;
+background-color: #28a745; /* Success color */
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.input-container button:hover {
+background-color: #218838; /* Darker shade on hover */
+}

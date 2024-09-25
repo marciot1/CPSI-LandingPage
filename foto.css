@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+h2{
+    padding: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload-icon {
+    height: 52px;
+    margin-top: 10px;
+}
+
+.upload-icon img {
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

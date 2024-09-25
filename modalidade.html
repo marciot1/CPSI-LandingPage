@@ -6,89 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modalidade</title>
     <link rel="stylesheet" type="text/css" href="stylelandingpage.css" media="screen" />
-    <style>
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        h2{
-            padding: 30px;
-        }
-        
-        .container {
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          grid-gap: 13px;
-          margin-top: 20px;
-        }
-        
-        .button {
-          background-color: #387564;
-          border: none;
-          color: white;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          border-radius: 5px;
-        }
-        
-        .button:hover {
-          background-color: #3e8e41;
-        }
-        
-        .button-black {
-          background-color: black;
-          border: none;
-          color: white;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          border-radius: 5px;
-        }
-        
-        .button-black:hover {
-          background-color: #222;
-        }
-        
-        .button-gray {
-          background-color: lightgray;
-          border: none;
-          color: black;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          border-radius: 5px;
-        }
-        
-        .button-gray:hover {
-          background-color: #ddd;
-        }
-        
-        .button-blue {
-          background-color: #4CAF50;
-          border: 1px solid #008CBA;
-          color: white;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          border-radius: 5px;
-        }
-        
-        .button-blue:hover {
-          background-color: #3e8e41;
-        }
-        </style>
+    <link rel="stylesheet" href="modalidade.css">
 </head>
 <body id="body">
     <div class="header" id="header">
@@ -109,50 +27,56 @@
             <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/modalidade.html">Modalidades</a>
             <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/foto.html">Fotos</a>
             <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/inscricao.html">Inscrição</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/inscricao.html">Equipes</a>
+            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/equipe.html">Equipes</a>
             <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/contato.html">Contato</a>
             <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/projeto.html">Projeto</a>
         </div>
     </div>
     <h2>Modalidades</h2>
 
-    <div class="container">
-
+    <div class="input-container">
+      <input type="text" id="time-input" placeholder="00:00 às 00:00" />
+      <input type="text" id="name-input" placeholder="Nome do Usuário" />
+      <button id="add-time-button">Adicionar Horário</button>
+    </div>
+    
+    <div class="container" id="schedule-container">
         <div class="button">Horários</div>
         <div class="button-black">Segunda</div>
         <div class="button-black">Terça</div>
-        <div class="button-black">Quarto</div>
+        <div class="button-black">Quarta</div>
         <div class="button-black">Quinta</div>
         <div class="button-black">Sexta</div>
-
-        <div class="button">00:00 às 00:00</div>
+    
+        <!-- Placeholder for time slots -->
+        <div class="button" id="time-slot-1"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
-
-        <div class="button">00:00 às 00:00</div>
+    
+        <div class="button" id="time-slot-2"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
-
-        <div class="button">00:00 às 00:00</div>
+    
+        <div class="button" id="time-slot-3"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
-
-        <div class="button">00:00 às 00:00</div>
+    
+        <div class="button" id="time-slot-4"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
         <div class="button-gray"></div>
     </div>
-   
+    <script src="modalidade.js"></script>
 </body>
 </html>

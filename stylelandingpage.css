@@ -33,7 +33,7 @@ body{
 .header{
     background-color: var(--color-dark2);
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 2 10%;
     height: 5.5em;
     box-shadow: 1px 1px 4px var(--color-dark4);
 }

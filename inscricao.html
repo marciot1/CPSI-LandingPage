@@ -10,22 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: sans-serif;
-        }
-
         .container {
-            width: 700px 400px;
-            margin: 80px auto;
-            padding: 30px;
-            border: 1px solid #ccc;
-            border-radius: 0%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 20px;
-            color: #000000;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
         }
 
         label {
@@ -34,38 +32,24 @@
         }
 
         input[type="text"],
-        input[type="email"],
-        input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            box-sizing: border-box;
-        }
-
+        input[type="tel"],
         textarea {
             width: 100%;
             padding: 10px;
-            margin-bottom: 15px;
             border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
-            resize: vertical;
+            border-radius: 4px;
         }
 
         button {
-            background-color: #387564;
-            color: white;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border: none;
-            border-radius: 3px;
+            border-radius: 4px;
             cursor: pointer;
-            width: 100%;
+            margin-top: 10px;
         }
 
         button:hover {
-            background-color: #45a049;
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -95,28 +79,29 @@
     </div>
     <div class="container">
         <h2>Inscrição</h2>
+        <form id="formInscricao">
+            <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="saude">Como está sua saúde?</label>
+                <textarea id="saude" name="saude" required></textarea>
+            </div>
 
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
-
-        <label for="saude">Como está sua saúde?</label>
-        <textarea id="saude" name="saude" required></textarea>
-
-        <button type="button" onclick="salvarDados()">Salvar</button>
-    </div>
+            <button type="button" onclick="salvarDados()">Salvar</button>
+            <button style="background: #ffff; color: #000000;" type="button" onclick="exportarParaExcel()">Exportar para Excel</button>
+        </form>
+    </div> 
     <script src="inscricao.js"></script>
-</body>
-<button style="background: #ffff; color: #000000;" type="button" onclick="exportarParaExcel()">Exportar para Excel</button>
-
 <script>
     var header           = document.getElementById('header');
     var navigationHeader = document.getElementById('navigation_header');

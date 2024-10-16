@@ -1,33 +1,34 @@
-// script.js
-let registros = [];
-
 function salvarDados() {
     const nome = document.getElementById('nome').value;
     const cpf = document.getElementById('cpf').value;
-    const email = document.getElementById('email').value;
     const telefone = document.getElementById('telefone').value;
     const saude = document.getElementById('saude').value;
 
-    const registro = { nome, cpf, email, telefone, saude };
-    registros.push(registro);
+    // Aqui você pode adicionar lógica para salvar os dados, como enviar para um servidor
+    console.log('Dados salvos: ', { nome, cpf, telefone, saude });
 
-    console.log('Registro salvo:', registro);
     alert('Dados salvos com sucesso!');
 }
 
 function exportarParaExcel() {
-    let csvContent = "data:text/csv;charset=utf-8,";
-    csvContent += "Nome,CPF,E-mail,Telefone,Saúde\n";
+    const nome = document.getElementById('nome').value;
+    const cpf = document.getElementById('cpf').value;
+    const telefone = document.getElementById('telefone').value;
+    const saude = document.getElementById('saude').value;
 
-    registros.forEach(registro => {
-        const row = `${registro.nome},${registro.cpf},${registro.email},${registro.telefone},${registro.saude}\n`;
-        csvContent += row;
-    });
+    const data = [
+        ["Nome", "CPF", "Telefone", "Saúde"],
+        [nome, cpf, telefone, saude]
+    ];
+
+    let csvContent = "data:text/csv;charset=utf-8," 
+        + data.map(e => e.join(",")).join("\n");
 
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "registros.csv");
-    document.body.appendChild(link);
+    link.setAttribute("download", "inscricao.csv");
+    document.body.appendChild(link); // Required for FF
+
     link.click();
 }

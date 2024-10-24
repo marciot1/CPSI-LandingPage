@@ -1,212 +1,56 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPSI</title>
-    <link rel="stylesheet" type="text/css" href="stylelandingpage.css" media="screen" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            height: 100vh;
-            width: 100vw;
-            background: linear-gradient(72deg, #ffffff 35%, #ffffff, #ffffff 99%); ;
-        }
-
-        .content {
-            height: 70%;
-            width: 81%;
-            border-radius: 0%;
-            overflow: hidden;
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0px 0px 0px 0px #ffffff;
-        }
-
-        .content .slide img {
-            height: 100%;
-            width: 100%;
-            border-radius: 14px;
-        }
-
-        .navigation {
-            position: absolute;
-            bottom: 17%;
-            left: 44%;
-            display: flex;
-        }
-
-        .bar {
-
-            width: 15px;
-            height: 15px;
-            border: 2px solid #ffffff;
-            margin: 6px;
-            border-radius: 15px;
+        .carousel-indicator {
             cursor: pointer;
-            transform: .3s ease;
-
         }
-
-        .bar:hover {
-            background-color: #ffffff;
+        .carousel-indicator.active {
+            background-color: black;
         }
-
-        input {
-        display: none;
-        }
-
-        .slides {
-            display: flex;
-            width: 500%;
-            height: 100%;
-        }
-
-        .slide {
-            width: 20%;
-            transition: .2s;
-        }
-
-        #slide1:checked ~ .s1 {
-            margin-left: 0;
-        } 
-
-        #slide2:checked ~ .s1 {
-            margin-left: -20%;
-        } 
-
-        #slide3:checked ~ .s1 {
-            margin-left: -40%;
-        } 
-
-        #slide4:checked ~ .s1 {
-            margin-left: -60%;
-        } 
-
-        #slide5:checked ~ .s1 {
-            margin-left: -80%;
-        } 
-
     </style>
 </head>
-<body id="boy">
-    <div class="header" id="header">
-        <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="35" height="50"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-        <div class="logo_header">
-            <img  src="logo.png" alt="Logo" class="img_logo_header">
+<body class="bg-white">
+    <header class="border-b">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <div class="bg-gray-300 w-16 h-16 flex items-center justify-center">
+                    <span class="text-gray-700">logo</span>
+                </div>
+            </div>
+            <nav class="flex space-x-6 text-gray-700">
+                <a href="#" class="hover:text-black">Modalidades</a>
+                <a href="#" class="hover:text-black">Fotos</a>
+                <a href="#" class="hover:text-black">Inscrição</a>
+                <a href="#" class="hover:text-black">Equipes</a>
+                <a href="#" class="hover:text-black">Contato</a>
+                <a href="#" class="hover:text-black">Projeto</a>
+            </nav>
         </div>
-        <div class="navigation_header" id="navigation_header">
-            <button onclick="toggleSidebar()" class="btn_icon_header">
-                <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
- 
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/modalidade.html">Modalidades</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/foto.html">Fotos</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/inscricao.html">Inscrição</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/equipe.html">Equipes</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/contato.html">Contato</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/projeto.html">Projeto</a>
+    </header>
+    <main class="container mx-auto mt-10">
+        <div id="carousel" class="bg-gray-300 rounded-lg w-full h-96 flex items-center justify-center">
+            <span class="text-gray-700 text-xl">Foto</span>
         </div>
-    </div>
-    <div class="content">
-
-        <div class="slides">
-
-            <input class="input" type="radio" name="slide" id="slide1" checked>
-            <input class="input" type="radio" name="slide" id="slide2">
-            <input class="input" type="radio" name="slide" id="slide3">
-            <input class="input" type="radio" name="slide" id="slide4">
-            <input class="input" type="radio" name="slide" id="slide5">
-
-
-            <div class="slide s1">
-                <img src="https://helvetiarg.com.br/wp-content/uploads/2023/07/as-4-vantagens-da-atividade-fisica-na-casa-de-idosos.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://clinicariviera.com.br/wp-content/uploads/2019/01/5-opcoes-de-atividades-fisica-para-idosos.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.zullivita.com.br/upload/657739379-os-melhores-exercicios-fisicos-para-idosos.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://casaderepousoemsaopaulo.com/blog/wp-content/uploads/2020/10/hidroginastica-scaled.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="imagens/terceira-idade.jpg" alt="">
-            </div>
+        <div class="flex justify-center mt-4 space-x-2">
+            <span class="w-3 h-3 bg-gray-400 rounded-full inline-block carousel-indicator" data-slide="0"></span>
+            <span class="w-3 h-3 bg-gray-400 rounded-full inline-block carousel-indicator" data-slide="1"></span>
+            <span class="w-3 h-3 bg-gray-400 rounded-full inline-block carousel-indicator" data-slide="2"></span>
+            <span class="w-3 h-3 bg-gray-400 rounded-full inline-block carousel-indicator" data-slide="3"></span>
         </div>
-    </div>
-
-    <div class="navigation">
-
-        <label class="bar" for="slide1"></label>
-        <label class="bar" for="slide2"></label>
-        <label class="bar" for="slide3"></label>
-        <label class="bar" for="slide4"></label>
-        <label class="bar" for="slide5"></label>
-
-    </div>
-
-
-    <script src="stylejavascript.js"></script>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', function() {
+                    indicators.forEach(ind => ind.classList.remove('active'));
+                    this.classList.add('active');
+                    // Add logic to change the carousel image based on the indicator clicked
+                });
+            });
+        });
+    </script>
 </body>
-<script>
-    var header           = document.getElementById('header');
-    var navigationHeader = document.getElementById('navigation_header');
-    var content          = document.getElementById('content');
-    var showSidebar      = false;
-
-    function toggleSidebar()
-    {
-        showSidebar = !showSidebar;
-        if(showSidebar)
-        {
-            navigationHeader.style.marginLeft = '-10vw';
-            navigationHeader.style.animationName = 'showSidebar';
-            content.style.filter = 'blur(2px)';
-        }
-        else
-        {
-            navigationHeader.style.marginLeft = '-100vw';
-            navigationHeader.style.animationName = '';
-            content.style.filter = '';
-        }
-    }
-
-    function closeSidebar()
-    {
-        if(showSidebar)
-        {
-            showSidebar = true;
-            toggleSidebar();
-        }
-    }
-
-    window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar) 
-        {  
-            showSidebar = true;
-            toggleSidebar();
-        }
-    });
-
-</script>
 </html>

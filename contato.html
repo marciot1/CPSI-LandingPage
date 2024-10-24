@@ -1,114 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cantato</title>
-    <link rel="stylesheet" type="text/css" href="stylelandingpage.css" media="screen" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-         body {
-      font-family: sans-serif;
-    }
-
-    h2{
-    padding: 30px;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      padding: 4%;
-      font-size: 13px;
-    }
-
-    .section-title {
-      font-weight: bold;
-    }
-
-    .contact-info {
-      display: i;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .contact-icon {
-      width: 30px;
-      height: 30px;
-    }
-
-    .address {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .address-icon {
-      width: 24px;
-      height: 24px;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contact-item {
+            margin-bottom: 20px;
+        }
+        .contact-item i {
+            margin-right: 10px;
+        }
+        .contact-item span {
+            font-size: 18px;
+        }
+        .address {
+            margin-top: 20px;
+        }
+        .address i {
+            margin-right: 10px;
+        }
+        .address span {
+            font-size: 18px;
+        }
     </style>
 </head>
-<body id="body">
-    <div class="header" id="header">
-        <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="35" height="50"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-        <div class="logo_header">
-            <img src="logo.png" alt="Logo" class="img_logo_header">
-        </div>
-        <div class="navigation_header" id="navigation_header">
-            <button onclick="toggleSidebar()" class="btn_icon_header">
-                <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/modalidade.html">Modalidades</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/foto.html">Fotos</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/inscricao.html">Inscrição</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/equipe.html">Equipes</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/contato.html">Contato</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/projeto.html">Projeto</a>
-        </div>
-    </div>
-    <h2 class="section-title">Contato</h2>
+<body>
     <div class="container">
-      <div class="contact-info">
-        <img class="contact-icon" src="imagens/email.png" alt="Email">
-        <span><a href="cpsi@gmail.com">Email</a></span>
-      </div>
-      <div class="contact-info">
-        <img class="contact-icon" src="imagens/whatsapp.png" alt="Whatsapp">
-        <span><a href="">+55 84 98821-6003</a></span>
-      </div>
-
-      <h2 class="section-title">Rede</h2>
-      <div class="contact-info">
-        <img class="contact-icon" src="imagens/youtube.png" alt="Youtube">
-        <span><a href="">CPSI</a></span>
-      </div>
-      <div class="contact-info">
-        <img class="contact-icon" src="imagens/instagram.png" alt="Instagram">
-        <span><a href="">@cpsi.ifrn</a></span>
-      </div>
-      <div class="contact-info">
-        <img class="contact-icon" src="imagens/facebook.png" alt="Facebook">
-        <span><a href="">Centrodepromocaoasaudedoidoso</a></span>
-      </div>
-
-      <h2 class="section-title">Endereço</h2>
-      <div class="address">
-        <img class="address-icon" src="imagens/location.png" alt="Location">
-        <span><a href="https://www.google.com/maps/@-5.8117429,-35.2045754,3a,75y,86.16h,82.98t/data=!3m6!1e1!3m4!1s7hew1GoKromW-M93L4yq8g!2e0!7i13312!8i6656?coh=205409&entry=ttu&g_ep=EgoyMDI0MDkyMi4wIKXMDSoASAFQAw%3D%3D">Av. Senador Salgado Filho, em frente ao Shopping Midway - Prédio da Terceira Idade - NUARTE
-          Avenida Senador Salgado Filho, 1559, Tirol, Natal-RN | CEP: 59015-000</a></span>
-      </div>
+        <div class="contact-item">
+            <h2>Contato</h2>
+            <p><i class="fas fa-envelope"></i> <span>cpsi@gmail.com</span></p>
+            <p><i class="fas fa-phone"></i> <span>+55 84 98821-6003</span></p>
+        </div>
+        <div class="contact-item">
+            <h2>Rede</h2>
+            <p><i class="fab fa-youtube"></i> <span>CPSI</span></p>
+            <p><i class="fab fa-instagram"></i> <span>@cpsifirm</span></p>
+            <p><i class="fab fa-facebook"></i> <span>Centrodepromocaosaudedoidoso</span></p>
+        </div>
+        <div class="address">
+            <h2>Endereço</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <span>Av. Senador Salgado Filho, em frente ao Shopping Midway - Prédio da Terceira Idade - NUARTE</span></p>
+            <p>Avenida Senador Salgado Filho, 1559, Tirol, Natal-RN | CEP: 59015-000</p>
+        </div>
     </div>
-  
 </body>
 </html>

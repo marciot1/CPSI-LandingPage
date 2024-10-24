@@ -1,185 +1,107 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>equipe</title>
-    <link rel="stylesheet" type="text/css" href="stylelandingpage.css" media="screen" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Equipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 4%;
-        align-content: stretch;
-      }
-      h2{
-        padding: 30px;
-      }
-      ul{
-        padding: 30px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-      
-      }
-      .circle {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin: 20px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-      }
-      .circle:hover{
-        background: rgb(170, 170, 170);
-        margin-top: 20px;
-      }
-      
-      
-      .circle img{
-        width: 90px;
-        height: 90px;
-        border-radius: 47px;
-      }
-      
-      .text {
-        position: absolute;
-        bottom: -3em;
-        text-align: center;
-        width: 100%;
-        color: rgb(0, 0, 0);
-        font-family: monospace;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .icon-item {
+            text-align: center;
+        }
+        .icon-item i {
+            font-size: 40px;
+            color: white;
+        }
+        .icon-item span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background-color: #6BAE3D;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
     </style>
-  </head>
-  <body id="body">
-    <div class="header" id="header">
-        <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="35" height="50"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-        <div class="logo_header">
-            <img src="logo.png" alt="Logo" class="img_logo_header">
-        </div>
-        <div class="navigation_header" id="navigation_header">
-          <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="https://img.icons8.com/?size=100&id=tIGF40qilLXA&format=png&color=000000" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-        </button>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/modalidade.html">Modalidades</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/foto.html">Fotos</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/inscricao.html">Inscrição</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/equipe.html">Equipes</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/contato.html">Contato</a>
-            <a href="file:///c%3A/Users/20181011110006/Documents/CPSI-LandingPage/projeto.html">Projeto</a>
-        </div>
-    </div>
-    <h2>Equipes</h2>
-    <ul>
-      <li>Cursos de Ensino</li>
-    </ul>
-    <p style="padding: 1%;">Assim como as oficinas, temos também os cursos de ensino!</p>
-    <div class="container">
-      <div class="circle">
-        <img src="imagens/EMPREENDEDORCARD.png" alt="Empreendedor">
-        <div  class="text">EMPREENDEDOR</div>
-      </div>
-      <div class="circle">
-        <img src="imagens/ANALFABETIZACAOCARD.png" alt="Alfabetização">
-        <div class="text">ANALFABETIZAÇÃO</div>
-      </div>
-      <div class="circle">
-        <img src="imagens/SEGURANCACARD.png" alt="Segurança Alimentar">
-        <div class="text">SEGURANÇA ALIMENTAR</div>
-      </div>
-      <div class="circle">
-        <img src="imagens/EDFINANCEIRACARD.png" alt="Educação Financeira">
-        <div class="text">EDUCAÇÃO FINANCEIRA</div>
-      </div>
-      <div class="circle">
-        <img src="imagens/DANCACARD.png" alt="Dança">
-        <div class="text">DANÇA</div>
-      </div>
-      <div class="circle">
-        <img src="imagens/CORALCARD.png" alt="Coral">
-        <div class="text">CORAL</div>
-      </div>
-      <div class="circle">
-        <img src="imagens/CONSCARD.png" alt="Cons. Corporal">
-        <div class="text">CONS. CORPORAL</div>
-      </div>
-    </div>
-    
-  </body>
-  <script>
-    var header           = document.getElementById('header');
-    var navigationHeader = document.getElementById('navigation_header');
-    var content          = document.getElementById('content');
-    var showSidebar      = false;
-
-    function toggleSidebar()
-    {
-        showSidebar = !showSidebar;
-        if(showSidebar)
-        {
-            navigationHeader.style.marginLeft = '-10vw';
-            navigationHeader.style.animationName = 'showSidebar';
-            content.style.filter = 'blur(2px)';
-        }
-        else
-        {
-            navigationHeader.style.marginLeft = '-100vw';
-            navigationHeader.style.animationName = '';
-            content.style.filter = '';
-        }
-    }
-
-    function closeSidebar()
-    {
-        if(showSidebar)
-        {
-            showSidebar = true;
-            toggleSidebar();
-        }
-    }
-
-    window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar) 
-        {  
-            showSidebar = true;
-            toggleSidebar();
-        }
-    });
-
-  </script>
-</html>
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-
 </head>
 <body>
-
-
+    <div class="container">
+        <h1>Equipes</h1>
+        <div class="content">
+            <p><strong>Cursos de Ensino</strong></p>
+            <p>Assim como as oficinas, temos também os cursos de ensino!</p>
+        </div>
+        <div class="icon-container">
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <span>EMPREENDEDOR</span>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-book"></i>
+                </div>
+                <span>ANALFABETIZAÇÃO</span>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span>SEGURANÇA ALIMENTAR</span>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-piggy-bank"></i>
+                </div>
+                <span>EDUCAÇÃO FINANCEIRA</span>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-child"></i>
+                </div>
+                <span>DANÇA</span>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <span>CORAL</span>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <span>CONS CORPORAL</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
